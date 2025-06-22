@@ -5,12 +5,23 @@ import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { useGuestName } from '@/hooks/useGuestName'
 
+type Player = {
+  id: string
+  name: string
+}
+
+type Room = {
+  id: string
+  code: string
+  host_name: string
+}
+
 export default function LobbyPage() {
   const { code } = useParams<{ code: string }>()
   const router = useRouter()
   const guestName = useGuestName()
-  const [players, setPlayers] = useState<any[]>([])
-  const [room, setRoom] = useState<any>(null)
+  const [players, setPlayers] = useState<Player[]>([])
+  const [room, setRoom] = useState<Room | null>(null)
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
