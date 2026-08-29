@@ -1,3 +1,11 @@
+<!-- Archive-status header added 2026-08-29; original content below is unchanged. -->
+> **ARCHIVED — 'Blank Slate' party game — web version (GitHub remote: blank-slate).**
+>
+> - **Status:** Archived
+> - **Died:** Last commit 2025-12-04 (icon chore). Reason not further recorded in-repo.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
